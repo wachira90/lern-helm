@@ -1,5 +1,9 @@
 # lern-helm
 
+## download
+
+https://github.com/helm/helm/releases
+
 Helm command reference
 
 Helm provides many commands for managing charts and Helm repositories. This list shows examples of the more common commands. After you configure a connection, you must add the --tls option to Helm commands that access the server through Tiller.
