@@ -3,32 +3,32 @@
 ## CREATE CHART
 
 ```
-helm create mychart
+helm create company
 ```
 
 ## EDIT VALUE
 
 ```yml
-mychart\values.yaml
+company\values.yaml
 repository: docker.io/library/nginx
 
 ingress:
   enabled: true
 
-mychart\Chart.yaml
+company\Chart.yaml
 appVersion: "1.25.1"
 ```
 
 ## TEST RUN
 
 ```
-helm install fda mychart --dry-run --debug
+helm install fda company --dry-run --debug
 ```
 
 ## INSTALL 
 
 ```
-helm install fda mychart --namespace test
+helm install fda company --namespace test
 ```
 
 ## UNINSTALL
@@ -40,15 +40,15 @@ helm uninstall fda --namespace test
 ## APPLY CONFIG WHEN EDIT
 
 ```
-helm upgrade fda mychart --namespace test
+helm upgrade fda company --namespace test
 ```
 
 ## GENERATE YAML FILE
 
 ```
-helm template mychart
+helm template company
 #OR
-helm template mychart > file.yaml
+helm template company > file.yaml
 ```
 
 
