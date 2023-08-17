@@ -46,9 +46,9 @@ helm upgrade fda company --namespace test
 ## GENERATE YAML FILE
 
 ```
-helm template company
+helm template fda company
 #OR
-helm template company > file.yaml
+helm template fda company > file.yaml
 ```
 
 
