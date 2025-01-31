@@ -47,43 +47,44 @@ rm company/templates/tests/test-connection.yaml
 
 ## TEST RUN
 
-```
+```sh
 helm install fda company --dry-run --debug
 ```
 
 ## INSTALL 
 
-```
+```sh
 helm install fda company -n test
 ```
 
 ## UNINSTALL
 
-```
+```sh
 helm uninstall fda -n test
 ```
 
 ## APPLY CONFIG WHEN EDIT
 
-```
+```sh
 helm upgrade fda company -n test
 ```
 
 ## GENERATE YAML FILE
 
-```
+```sh
 helm template fda company
 ```
 
 ### OR
 
-```
+```sh
 helm template fda company > file.yaml
 ```
 
 ## USE CASE 
 
 ### DATA
+
 ```
 companyname : ekyc
 service : landing
@@ -93,7 +94,7 @@ service : api
 
 ### COMMAND 
 
-```
+```sh
 helm create landing
 
 helm create web
