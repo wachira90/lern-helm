@@ -107,10 +107,10 @@ helm template ekyc web
 
 helm template ekyc api
 
-helm install ekyc landing -n test
+helm install ekyc landing -n dev
 
-helm install ekyc web -n test
+helm install ekyc web -n dev
 
-helm install ekyc api -n tes
+helm install ekyc api -n dev
 
 ```
